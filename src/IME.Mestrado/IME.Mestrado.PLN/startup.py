@@ -50,7 +50,7 @@ for configuracoes in config.array_configuracoes:
     extrator = pre_atributos.ExtratorDeAtributos(configuracoes, previsores)
     
     representacoes = extrator.getLiwc_all_STI()
-    #representacoes += extrator.getLiwc()
+    #representacoes += extrator.getLiwc()  
     #representacoes += extrator.getBert()
     
     #criando lista de algortimos
