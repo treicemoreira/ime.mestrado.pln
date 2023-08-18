@@ -77,6 +77,7 @@ class Configs():
         self.w2VEmbeddings = [
             W2VModel('asserts\\modelos\\buscape_preprocessed.txt', 
                      'asserts\\rv_models\\w2v-buscape_preprocessed_768.model', 
+                                     
                      768, 4, 4, 100, 10000)
         ]
         self.bert_array = [
