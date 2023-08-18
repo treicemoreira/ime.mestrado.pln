@@ -46,7 +46,7 @@ for configuracoes in config.array_configuracoes:
     
     previsores = corretorDb.getOrCorrect(configuracoes, tratarDb, previsores, classe)
     
-    #extra��o de atributos
+    #extração de atributos
     extrator = pre_atributos.ExtratorDeAtributos(configuracoes, previsores)
     
     representacoes = extrator.getWord2Vec()
@@ -67,7 +67,7 @@ for configuracoes in config.array_configuracoes:
     #algortimos += rna
     #algortimos = rna
     
-    #simula��es
+    #simulações
     simulacoes = simulation_db.SimulationAlgorithm(configuracoes, algortimos, representacoes, classe)
     #simulacoes.execute(220, False, True)
     simulacoes.execute(0, False, True)
