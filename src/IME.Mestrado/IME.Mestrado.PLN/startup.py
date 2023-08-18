@@ -49,7 +49,7 @@ for configuracoes in config.array_configuracoes:
     #extração de atributos
     extrator = pre_atributos.ExtratorDeAtributos(configuracoes, previsores)
     
-    representacoes = extrator.getWord2Vec()
+    representacoes = extrator.getLiwc_all_STI()
     #representacoes += extrator.getLiwc()
     #representacoes += extrator.getBert()
     
