@@ -63,8 +63,8 @@ class Configs():
         # self.separador = ';'
         self.separador = ','
         self.dfColumns = {
-            'text': 'FRASE',
-            'classes': 'OBJ/SUBJ'
+            'text': 'POLARIDADE',
+            'classes': 'POSITIVO/NEUTRO/NEGATIVO'
         }
         #self.dfColumns = {
         #    'text': 'frases',
@@ -73,7 +73,7 @@ class Configs():
         self.tratarDb = False
         self.pathRepresentacao = f'asserts\\rv_dataset\\{self.dataset}_'
         self.log = PrintFile(self.dataset)
-        self.numero_classes = 2
+        self.numero_classes = 3
         self.w2VEmbeddings = [
             W2VModel('asserts\\modelos\\buscape_preprocessed.txt', 
                      'asserts\\rv_models\\w2v-buscape_preprocessed_768.model', 
